@@ -20,9 +20,10 @@ header {
 }
 
 #container {
-    max-width:480px;
+    background-color: lightgray;
+    width:480px;
     margin: 0 auto;
-    max-height: 480px;
+    height: 480px;
     display:flex;
     flex-wrap: wrap;
     
@@ -32,5 +33,37 @@ header {
 .cell {
     
     background-color: lightgray;
+    
+}
+
+#controls{
+    margin-top: 30px;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#slider p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color:#cf3e3e;
+    color: white;
+    font-size: 1.2em;
+    padding: 1.5em;
+    border-radius: 10px;
+    border: none;
+    transition: 0.2s ease;
+}
+
+button:hover{
+    background-color: #f51616;
+    color:#eeeeee;
+    transform: scale(1.1);
     
 }
