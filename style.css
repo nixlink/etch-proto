@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#frame {
+    width:580px;
+    height:580px;
+    margin: 0 auto;
+    background-color: #cf3e3e;
+    border-radius: 20px;
+    padding: 48px;
+}
+
+#container {
+    max-width:480px;
+    margin: 0 auto;
+    max-height: 480px;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.cell {
+    
+    background-color: lightgray;
+    
+}
