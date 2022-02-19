@@ -11,8 +11,8 @@ header {
 }
 
 #frame {
-    width:580px;
-    height:580px;
+    width:450px;
+    height:450px;
     margin: 0 auto;
     background-color: #cf3e3e;
     border-radius: 20px;
@@ -21,9 +21,9 @@ header {
 
 #container {
     background-color: lightgray;
-    width:480px;
+    width:350x;
     margin: 0 auto;
-    height: 480px;
+    height: 350px;
     display:flex;
     flex-wrap: wrap;
     

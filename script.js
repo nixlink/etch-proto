@@ -1,22 +1,31 @@
 // Selectors
-//**************************//
+
 const CONTAINER = document.getElementById("container");
 const clrButton = document.getElementById("clear");
 const slider = document.getElementById("pixelSlider");
 const pixelTxt = document.getElementById("pixelTxt");
+
+// Pixel Density Slider Functionality
+
 slider.step = 2;
+
 let gridSize = slider.value;
+
 pixelTxt.innerText = slider.value;
 
 slider.oninput = () => {
     pixelTxt.innerText = slider.value;   
 }
+
 slider.onchange = () => {
     
     gridSize = slider.value;
     clearScreen();
     
 }
+
+// Event listener for the 'Clear' button
+
 clrButton.addEventListener('click', clearScreen);
 
 
@@ -28,7 +37,7 @@ function drawGrid(){
     
    
 
-    let cellSize = 480 / gridSize;
+    let cellSize = 350 / gridSize;
 
     
 
@@ -47,7 +56,7 @@ function drawGrid(){
 
 
 }
-
+// Change the color of cells in the grid on mouseover
 function changeColor(e){
 
     console.log(e);
@@ -63,9 +72,10 @@ function clearScreen(){
 
     }
 
-    // Now we have to redraw the grid, or we'd have a big red square with no drawing area.
+    // Now we have to redraw the grid
     drawGrid();
     
 }
 
+// Start the page with a default grid size based on the slider default
 drawGrid();
